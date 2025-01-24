@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ViewData from './components/ViewData';
+import FetchData from './FetchData';
 
 function App() {
+  const data = FetchData();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className="container">
+        <h1 className='mainbadge mt-5 badge bg-warning text-dark'>Security Report</h1>
+        <ViewData data={data} />
     </div>
   );
 }

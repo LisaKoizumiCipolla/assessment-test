@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.overflow-auto{
+  height: 5rem;
+}
+
+.mainbadge{
+  font-size: 2rem;
+}
+
+.secondary-badge{
+  font-size: 1rem;
+}
